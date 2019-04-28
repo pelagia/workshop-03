@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Button = styled.button`
   padding: 10px;
@@ -9,6 +9,6 @@ const Button = styled.button`
   color: white;
   height: 45px;
   text-align: center;
-`;
+`
 
-export default Button;
+export default Button

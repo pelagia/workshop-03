@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Label = styled.span`
   font-size: 20px;
@@ -6,6 +6,6 @@ const Label = styled.span`
   color: white;
   height: 25px;
   text-align: left;
-`;
+`
 
-export default Label;
+export default Label

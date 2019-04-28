@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Input = styled.input`
   padding: 10px;
@@ -9,6 +9,6 @@ const Input = styled.input`
     outline: none !important;
     border: 1px solid grey;
   }
-`;
+`
 
-export default Input;
+export default Input

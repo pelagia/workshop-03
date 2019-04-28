@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const TextArea = styled.textarea`
   height: 100%;
@@ -7,6 +7,6 @@ const TextArea = styled.textarea`
     outline: none !important;
     border: 1px solid grey;
   }
-`;
+`
 
-export default TextArea;
+export default TextArea

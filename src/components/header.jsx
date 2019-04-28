@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Header = styled.div`
   padding: 20px;
@@ -7,6 +7,6 @@ const Header = styled.div`
   display: flex;
   flex-direction: row;
   width: 100vw;
-`;
+`
 
-export default Header;
+export default Header
