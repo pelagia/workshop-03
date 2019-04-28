@@ -19,9 +19,9 @@ const Wrapper = styled.div`
 `
 
 const WrapperLink = styled.div`
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
   padding: 10px;
+  margin-top: 30px;
 `
 
 const BaseInfo = styled.section`
@@ -32,9 +32,10 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid;
+  border-radius: 5px;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
-  background-color: #fff8dc;
+  box-shadow: 5px 10px rgb(74, 157, 134);
+  background-color: rgba(217, 130, 59, 0.95);
   margin: 20px;
 `
 
@@ -49,6 +50,7 @@ const LinkPage = styled(NavLink)`
 
 const LabelText = styled(Label)`
   color: black;
+  font-weight: ${props => props.bold ? `bold`: `normal`};
 `
 
 class News extends Component {
@@ -69,17 +71,17 @@ class News extends Component {
           {Object.values(news).map(item => (
             <Card>
               <Wrapper>
-                <LabelText>{item.title}</LabelText>
+                <LabelText bold>{item.title}</LabelText>
               </Wrapper>
               <Wrapper>
                 <LabelText>{item.summary}</LabelText>
               </Wrapper>
               <WrapperLink>
-                <LabelText>useful info:</LabelText>
+                <LabelText bold>useful info:</LabelText>
                 <LabelText>{item.link}</LabelText>
               </WrapperLink>
               <WrapperLink>
-                <LabelText>more:</LabelText>
+                <LabelText bold>more:</LabelText>
                 <ReactPlayer url={item.video} />
               </WrapperLink>
             </Card>

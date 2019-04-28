@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 40%;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
 `
 
 const BaseInfo = styled.section`
@@ -25,11 +25,13 @@ const BaseInfo = styled.section`
 
 const Card = styled.div`
   display: flex;
+  height: 100%;
   flex-direction: column;
   border: 1px solid;
+  border-radius: 5px;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
-  background-color: #FFF8DC;
+  box-shadow: 5px 10px rgb(74, 157, 134);
+  background-color: rgb(234, 196, 69);
   margin: 20px;
 `
 
@@ -103,8 +105,8 @@ render () {
       </LinkPage>
       <BaseInfo>
         <Button onClick={this.addActivity} >Add Activity</Button>
-        {Object.values(this.state.databaseData).map(item =>
-          <Card>
+        {this.state.databaseData !== null && Object.values(this.state.databaseData).map(item =>
+          <Card key='item'>
             <Wrapper>
               <LabelText>What type of activity?</LabelText>
               <LabelText>{item.activityName}</LabelText>

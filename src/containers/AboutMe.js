@@ -102,6 +102,7 @@ class AboutMe extends Component {
         <Wrapper>
           <MainTitle>My name is {this.state.firstName}, and this is my story..</MainTitle>
           <Paragraph>{this.state.baseDescription}</Paragraph>
+          <img src={require('./assets/nature.jpeg')} alt='' height='400px' width='600px' />
         </Wrapper>
       </BaseContent>
     )
